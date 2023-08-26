@@ -8,6 +8,9 @@ import { CurrencyConverterPipe } from './MyComponents/Pipe/currency-converter.pi
   providers: [CurrencyConverterPipe],
 })
 export class AppComponent {
+  title(title: any) {
+    throw new Error('Method not implemented.');
+  }
   fromCurrency?: string;
   toCurrency?: string;
   amount?: number;
